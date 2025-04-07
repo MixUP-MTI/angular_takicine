@@ -1,0 +1,7 @@
+<ngb-carousel>
+  @for (movie of movies$ | async; track movie.id) {
+    <ng-template ngbSlide>
+      <app-movie [movie]="movie"></app-movie>
+    </ng-template>
+  }
+</ngb-carousel>

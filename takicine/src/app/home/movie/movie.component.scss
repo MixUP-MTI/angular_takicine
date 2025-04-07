@@ -1,0 +1,80 @@
+.picsum-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background-color: #000;
+    border-radius: 12px;
+    margin-top: 20px;
+  }
+  
+  .picsum-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .picsum-img-wrapper:hover img {
+    transform: scale(1.05);
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+  }
+  
+  .carousel-caption h2 {
+    font-size: 1.2rem;
+    color: #ffc107;
+    margin: 0;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .carousel-caption p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .picsum-img-wrapper {
+      height: 300px;
+    }
+  
+    .carousel-caption {
+      padding: 10px;
+    }
+  
+    .carousel-caption h2 {
+      font-size: 1rem;
+    }
+  
+    .carousel-caption h3 {
+      font-size: 1.4rem;
+    }
+  
+    .carousel-caption p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  .picsum-img-wrapper img {
+    transition: transform 0.5s ease;
+  }
+  
+  .picsum-img-wrapper:hover img {
+    transform: scale(1.05);
+  }
+  

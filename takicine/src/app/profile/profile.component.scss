@@ -1,0 +1,200 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: var(--form-text-color);
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère sur les boutons */
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  .btn-red {
+    background-color: #F74F80;
+    color: white;
+  }
+  
+  .btn-blue {
+    background-color: white;
+    border: 2px solid #F74F80;
+    color: #F74F80;
+  }
+  
+  .btn-blue:hover {
+    background-color: #F74F80;
+    color: white;
+  }
+  
+  .btn-green {
+    background-color: white;
+    border: 2px solid #252525;
+    color: #252525;
+  }
+  
+  .btn-green:hover {
+    background-color: #252525;
+    color: white;
+  }
+  
+  .btn-yellow {
+    background-color: rgb(214, 39, 26);
+    color: white;
+  }
+  
+  .btn:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style spécial pour le bouton de déconnexion */
+.btn-disconnect {
+  color: var(--form-text-color);;
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #F74F80;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn-disconnect::before,
+.btn-disconnect::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+.btn-disconnect::before {
+  left: -10px;
+  background: #f597b2;
+}
+
+.btn-disconnect::after {
+  right: -10px;
+  background: #F74F80;
+}
+
+.btn-disconnect:hover::before,
+.btn-disconnect:hover::after {
+  width: 58%;
+}
+
+.btn-disconnect span {
+  color: #03045e;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+}
+
+.btn-disconnect:hover span {
+  color: #e0aaff;
+}
+
+  
+.infos {
+    background-color: var(--form-bg-color);
+    color: var(--form-text-color);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #F74F80;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+.infos h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    // color: #1e1e1e;
+    color: var(--form-text-color);
+
+  }
+  
+.info {
+    text-align: left;
+    font-size: 1.1rem;
+    color: var(--form-text-color);
+
+  }
+  
+  .info p {
+    margin: 5px 0;
+  }
+  
+  /* Style pour l'input d'email */
+.email-search {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .email-search input {
+    width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 2px solid #F74F80;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+    margin-bottom: 10px;
+  }
+  
+  .email-search input:focus {
+    outline: none;
+    border-color: #F74F80;
+    box-shadow: 0 0 10px rgba(247, 79, 128, 0.5);
+  }
+  
+  .email-search input::placeholder {
+    color: #888;
+    font-style: italic;
+  }
+  
+  .email-search button {
+    background-color: #F74F80;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .email-search button:hover {
+    opacity: 0.8;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  

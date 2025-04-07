@@ -1,0 +1,32 @@
+<!-- dashboard.component.html -->
+<div class="dashboard">
+    <!-- Statistiques -->
+    <div class="stat-card">
+      <div class="stat-title">Nombre de <span class="yellow-text">films</span></div>
+      <p class="stat-value">{{ movieCount !== null ? movieCount : 'Chargement...' }}</p>
+    </div>
+  
+    <div class="stat-card">
+      <div class="stat-title">Nombre d'<span class="yellow-text">utilisateurs</span></div>
+      <p class="stat-value">{{ userCount !== null ? userCount : 'Chargement...' }}</p>
+    </div>
+  
+    <div class="buttons-container">
+      <button class="button yellow">Les films</button>
+      <button class="button">Les utilisateurs</button>
+    </div>
+  
+    <div class="stat-card">
+      <div class="stat-title">Nombre d'<span class="yellow-text">avis</span></div>
+      <p class="stat-value">27</p>
+    </div>
+  
+    <div class="stat-card">
+      <div class="stat-title">Satisfaction :<span class="yellow-text">60%</span></div>
+      <div class="stat-value">Bon</div>
+    </div>
+  
+    <div class="buttons-container">
+      <button class="button outline">Les avis</button>
+    </div>
+  </div>

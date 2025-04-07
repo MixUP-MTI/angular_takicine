@@ -1,0 +1,21 @@
+<div class="form-container">
+    <h1>Passionné(e) de cinéma ? Inscris-toi !</h1>
+    <h2>Et rejoins une vraie communauté.</h2>
+  
+    <form>
+      <label for="first-name">Prénom</label>
+      <input type="text" id="first-name" name="first-name" required [(ngModel)]="user.firstName"/>
+  
+      <label for="last-name">Nom de famille</label>
+      <input type="text" id="last-name" name="last-name" required [(ngModel)]="user.lastName"/>
+  
+      <label for="age">Âge</label>
+      <input type="number" id="age" name="age" min="1" required [(ngModel)]="user.age"/>
+  
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required [(ngModel)]="user.email"/>
+  
+      <button type="submit" class="btn-rose" (click)=addUser()>Ajouter</button>
+    </form>
+  </div>
+  

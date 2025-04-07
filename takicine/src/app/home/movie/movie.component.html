@@ -1,0 +1,10 @@
+  @if(movie.image) {
+    <div class="picsum-img-wrapper">
+      <img src="http://localhost:8080/movies/{{movie.id}}/image" alt="">
+    </div>
+    <div class="carousel-caption">
+      <h2>"Note: {{movie.rate}} ⭐︎"</h2>
+      <h3>{{movie.title}}</h3>
+      <p>{{movie.synopsis}}</p>
+    </div>
+  }

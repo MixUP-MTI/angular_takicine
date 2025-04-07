@@ -1,0 +1,38 @@
+/* Centrer le formulaire et lui donner un fond gris */
+.form-container {
+  width: 50%; /* Largeur du formulaire */
+  background-color: #f0f0f0; /* Fond gris */
+  padding: 20px;
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espacement entre les éléments */
+  margin: 50px auto; /* Centre le formulaire horizontalement */
+  text-align: center; /* Centrer le texte */
+}
+
+/* Style des champs input et textarea */
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Bouton rose */
+.btn-rose {
+  background-color: #ff69b4; /* Fond rose */
+  color: white; /* Texte blanc */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.btn-rose:hover {
+  background-color: purple; /* Changement de couleur au survol */
+}

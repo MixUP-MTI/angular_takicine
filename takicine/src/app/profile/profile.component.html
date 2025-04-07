@@ -1,0 +1,31 @@
+<div class="container">
+    <h1 class="title">Mon Profil</h1>
+  
+    <div class="buttons">
+      <button class="btn btn-red">Nouvel avis</button>
+      <button class="btn btn-blue">Modifier mes avis</button>
+      <button class="btn btn-green">Modifier mes infos</button>
+      <button class="btn-disconnect" (click)="logout()">Déconnexion</button>
+    </div>
+
+    <div class="email-search">
+        <input type="email" [(ngModel)]="email" placeholder="Saisissez votre email" />
+        <button (click)="getUserByEmail()">Rechercher</button>
+      </div>
+  
+    <section class="infos">
+      <h2>Mes Infos</h2>
+      <div class="info" *ngIf="user">
+        <p><strong>Nom:</strong> {{ user.lastName }}</p>
+        <p><strong>Prénom:</strong> {{ user.firstName }}</p>
+        <p><strong>Âge:</strong> {{ user.age }} ans</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <p><strong>Points de fidélité:</strong> {{ user.points }}</p>
+      </div>
+  
+      <div *ngIf="!user">
+        <p>Entrez votre email ou inscrivez vous</p>
+      </div>
+    </section>
+  </div>
+  

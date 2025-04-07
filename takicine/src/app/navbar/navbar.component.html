@@ -1,0 +1,21 @@
+<nav class="navbar custom-navbar navbar-expand ps-5">
+  <a class="navbar-brand">
+    <div class="navbar-logo-container">
+      <img src="../../assets/image.png" alt="Logo" class="navbar-logo">
+    </div>
+    {{ title }}
+  </a>
+  <a class="nav-item nav-link" routerLink="/">Accueil</a>
+  <a class="nav-item nav-link ms-3" routerLink="/movies">Gestion de films</a>
+  <a class="nav-item nav-link ms-3" routerLink="/panel-admin">Panel admin</a>
+  <div class="ms-auto d-flex align-items-center">
+    <button (click)="toggleDarkMode()" class="theme-toggle-btn">
+      <i [class]="isDarkMode ? 'fas fa-sun' : 'fas fa-moon'"></i>
+    </button>
+    
+    <a class="nav-item nav-link ms-3" routerLink="/register">Inscription</a>
+    <a class="nav-item nav-link ms-3" routerLink="/profile">
+      <i class="fa fa-user" style="font-size: 1.2rem;"></i>
+    </a>
+  </div>
+</nav>

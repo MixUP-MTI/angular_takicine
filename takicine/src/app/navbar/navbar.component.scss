@@ -1,0 +1,53 @@
+/* Style de la navbar */
+.custom-navbar {
+  background-color: #F74F80; /* Rose */
+  color: white;
+  padding: 10px 20px;
+}
+
+/* Changer la couleur du texte et des liens */
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+  color: white !important; /* Texte en blanc */
+  font-weight: bold;
+}
+
+/* Effet au survol des liens */
+.custom-navbar .nav-link:hover {
+  color: black !important; /* Changement de couleur au survol */
+  text-decoration: underline;
+}
+
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo-container {
+  width: 30px; /* Taille du carré */
+  height: 30px; /* Taille du carré */
+  overflow: hidden; /* Masquer les bords de l'image */
+  display: inline-block;
+  margin-right: 10px; /* Espacement entre l'image et le texte */
+}
+
+.navbar-logo {
+  width: 100%; /* L'image occupe toute la largeur du conteneur */
+  height: 100%; /* L'image occupe toute la hauteur du conteneur */
+  object-fit: cover; /* L'image remplit le conteneur tout en préservant son aspect */
+  object-position: center; /* Centrer l'image */
+}
+
+.navbar-brand span {
+  margin-left: 10px; /* Espacement entre l'image et le texte */
+}
+
+

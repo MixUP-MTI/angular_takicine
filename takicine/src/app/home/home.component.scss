@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.picsum-img-wrapper img {
+  transition: transform 0.5s ease;
+}
+
+.picsum-img-wrapper:hover img {
+  transform: scale(1.05); /* <- ce zoom peut se déclencher lors du slide */
+}
